@@ -71,7 +71,7 @@ function App() {
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="h-screen px-10 text-gray-800 sm:px-20 dark:text-zinc-50 bg-slate-50 dark:bg-gray-950">
-        <div className="container flex flex-col items-center justify-center h-[70vh] mx-auto ">
+        <div className="container flex flex-col items-center justify-center h-[70vh] w-full ">
           <Header onChangeInput={handleInput} inputValue={inputValue} />
           {isLoading && (
             <p className="mt-10">

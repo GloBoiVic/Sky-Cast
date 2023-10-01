@@ -10,10 +10,10 @@ interface DisplayProps {
 
 function Display({ locationName, countryCode, currentWeather, forecastWeather }: DisplayProps) {
   return (
-    <div className="flex items-center justify-between w-full p-5 m-4 mx-auto ">
+    <div className="grid w-full grid-cols-2 p-5 ">
       <div>
-        <h1 className="text-2xl font-bold md:text-4xl">Today's Weather</h1>
-        <p className="mt-5 ml-10 text-zinc-500">
+        <h1 className="text-lg font-bold md:text-4xl">Today's Weather</h1>
+        <p className="mt-5 text-zinc-500">
           in {locationName}, {countryCode}
         </p>
       </div>
