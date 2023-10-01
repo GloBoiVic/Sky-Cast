@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { currentWeather, forecastWeather } from './types/commonType.model';
 import Header from './components/Header';
 import Display from './components/Display';
-import { Loader, Moon, Sun } from 'lucide-react';
+import { Loader } from 'lucide-react';
 import TabMenu from './components/Tabs';
 
 import { ThemeProvider } from './components/theme-provider';
@@ -70,7 +70,7 @@ function App() {
   }, [inputValue]);
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      <div className="h-screen text-gray-800 dark:text-zinc-50 bg-slate-50 dark:bg-gray-950">
+      <div className="h-screen px-10 text-gray-800 sm:px-20 dark:text-zinc-50 bg-slate-50 dark:bg-gray-950">
         <div className="container flex flex-col items-center justify-center h-[70vh] mx-auto ">
           <Header onChangeInput={handleInput} inputValue={inputValue} />
           {isLoading && (

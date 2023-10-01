@@ -11,9 +11,9 @@ function TabMenu({ forecastWeather }: TabMenuProps) {
   const fiveDay = [forecastWeather.minTemp, forecastWeather.maxTemp];
   console.log(fiveDay);
   return (
-    <div className="w-full ml-auto ">
-      <Tabs defaultValue="today" className="border-t h-[25vh]">
-        <TabsList className="grid w-full grid-cols-2 border-b bg-inherit ">
+    <div className="w-1/2 mx-auto ">
+      <Tabs defaultValue="today" className="h-[25vh]">
+        <TabsList className="grid w-full grid-cols-2 border bg-inherit ">
           <TabsTrigger value="today">Today</TabsTrigger>
           <TabsTrigger value="tomorrow">Tomorrow</TabsTrigger>
         </TabsList>
